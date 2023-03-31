@@ -19,7 +19,7 @@ function Home() {
             .then((data) => {
               dispatch({type : "apiChange", payload : data})
             });
-    },[])
+    },[dispatch])
 
     function handleItems(el)
     {
