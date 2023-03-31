@@ -22,7 +22,7 @@ function Login() {
         dispatch({type : "statusChange"})
       navigate("/");
     }
-  }, [login, navigate,dispatch]);
+  }, [dispatch, login, navigate]);
 
   function formHandler(e) {
     e.preventDefault();
